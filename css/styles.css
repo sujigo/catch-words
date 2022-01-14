@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Press Start 2P';
+}
+
+.title {
+    margin-top: 5px;
+}
+
+.main {
+    border: solid yellow;
+    display: inline-block;
+    width: 70%;
+    height: 530px;
+}
+
+.movingWords {
+    height: 83%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.words {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.inputAndButton{
+    padding-top: 25px;
+    border-top: solid whitesmoke;
+}
+
+input {
+    border: solid yellow;
+    width: 20%;
+}
+
+#attempt, #time {
+    display: inline-block;
+}
+
+#time {
+    margin-left: 30%;
+}
+
+/* animations */
+.move {
+    /* height: 100px;
+    width: 100px; */
+    display: inline-block;
+    text-align: center;
+    /* background-color: aqua; */
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.move--0 {
+    animation-delay: 3s;
+    animation-duration: 12s;
+}
+
+.move--1 {
+    animation-delay: 1s;
+    animation-duration: 11s;
+}
+
+.move--2 {
+    animation-delay: 7s;
+    animation-duration: 12s;
+}
+
+.move--3 {
+    animation-delay: 5s;
+    animation-duration: 11s;
+}
+
+@keyframes move {
+    from {
+        margin-top: 0%;
+    }
+  
+    to {
+        margin-top: 65%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    @keyframes move {
+        from {
+            margin-top: 0%;
+        }
+      
+        to {
+            margin-top: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    @keyframes move {
+        from {
+            margin-top: 0%;
+        }
+      
+        to {
+            margin-top: 150%;
+        }
+    }
+}
+
+footer {
+    text-align: right;
+    font-size: xx-small;
+    color: lightgrey;
+}
+
+.hidden {
+    visibility: hidden;
+}
